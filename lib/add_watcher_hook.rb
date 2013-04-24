@@ -1,4 +1,4 @@
-class AddWatcherHook < Redmine::Hook::ViewListener
+﻿class AddWatcherHook < Redmine::Hook::ViewListener
 	def controller_issues_edit_before_save(context = { })
 		addWatcher(context)
 	end
